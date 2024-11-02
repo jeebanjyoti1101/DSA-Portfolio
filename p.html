@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeevanjyoti Pradhan | DSA Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1f80e0;
+            --secondary-color: #0b0c0f;
+            --hover-color: #147bd1;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .hotstar-bg {
+            background: linear-gradient(to top, var(--secondary-color) 0%, rgba(11, 12, 15, 0.8) 60%, var(--secondary-color) 100%);
+        }
+
+        .hotstar-button {
+            transition: all 0.3s ease;
+            background-color: var(--primary-color);
+        }
+
+        .hotstar-button:hover {
+            background-color: var(--hover-color);
+            transform: scale(1.05);
+        }
+
+        .subscribe-button {
+            background: linear-gradient(93.87deg, #095AE5, #062794);
+        }
+
+        .subscribe-button:hover {
+            background: linear-gradient(93.87deg, #0849b8, #041b63);
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .skill-tag {
+            transition: all 0.3s ease;
+            background: linear-gradient(93.87deg, #095AE5, #062794);
+        }
+
+        .skill-tag:hover {
+            transform: scale(1.1);
+            background: linear-gradient(93.87deg, #0849b8, #041b63);
+        }
+
+        .hotstar-card {
+            transition: all 0.3s ease;
+            background: linear-gradient(rgba(11, 12, 15, 0.9), rgba(11, 12, 15, 0.6));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hotstar-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(31, 128, 224, 0.2);
+            border: 1px solid rgba(31, 128, 224, 0.3);
+        }
+
+        .social-icon {
+            transition: all 0.3s ease;
+            color: var(--primary-color);
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2);
+            color: var(--hover-color);
+        }
+
+        body {
+            background-color: var(--secondary-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .disney-plus-logo {
+            background: linear-gradient(93.87deg, #095AE5, #062794);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-gradient {
+            background: linear-gradient(180deg, var(--secondary-color) 0%, rgba(11, 12, 15, 0.9) 50%, transparent 100%);
+        }
+
+        .premium-tag {
+            background: linear-gradient(93.87deg, #FFB82B, #F58220);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="text-white">
+    <!-- Disney+ Hotstar Logo -->
+    <nav class="fixed top-0 w-full z-50 nav-gradient p-4">
+        <div class="flex items-center space-x-2">
+            <div class="disney-plus-logo text-2xl">DISNEY+</div>
+            <div class="text-[var(--primary-color)] font-bold text-2xl">HOTSTAR</div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative min-h-screen">
+        <div class="absolute inset-0 hotstar-bg">
+            <img src="chip-circuit-board-abstract-technology-background.jpg" alt="Background" class="w-full h-full object-cover opacity-30"/>
+        </div>
+
+        <div class="relative pt-32 px-8 md:px-16 fade-in">
+            <!-- Title and Main Info -->
+            <h1 class="text-7xl font-bold mb-4">Jeevanjyoti Pradhan</h1>
+            <div class="flex items-center space-x-4 mb-6 text-lg">
+                <span class="premium-tag font-bold">PREMIUM MEMBERS</span>
+                <span class="border border-[var(--primary-color)] px-2 text-[var(--primary-color)]">2nd Year</span>
+                <span>BTech </span>
+                <span class="bg-[var(--primary-color)] bg-opacity-20 px-2 text-[var(--primary-color)]">IT</span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex space-x-4 mb-8">
+                <button class="subscribe-button text-white px-8 py-3 rounded-sm flex items-center space-x-2">
+                    <i class="fa fa-video w-6 h-6"></i>
+                    <span>View DSA Projects</span>
+                </button>
+                <button class="bg-[#192133] text-white px-8 py-3 rounded-sm flex items-center space-x-2 hover:bg-[#1c2539]">
+                    <i class="fa fa-info-circle w-6 h-6"></i>
+                    <span>More Info</span>
+                </button>
+            </div>
+
+            <!-- Description -->
+            <div class="max-w-3xl mb-12">
+                <p class="text-[#ffffff99] text-xl mb-4">Aspiring Software Developer at SRM Institute of Science and Technology, specializing in Information Technology with a strong foundation in Data Structures and Algorithms. Seeking internship opportunities at marquee companies to apply and enhance technical skills.</p>
+            </div>
+
+            <!-- Skills Sections -->
+            <div class="space-y-8 mb-16">
+                <!-- DSA Skills -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-[var(--primary-color)]">DSA Concepts</h2>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag px-4 py-2 rounded-sm">Arrays & Strings</span>
+                        <span class="skill-tag px-4 py-2 rounded-sm">Linked Lists</span>
+                        <span class="skill-tag px-4 py-2 rounded-sm">Trees</span>
+                        <span class="skill-tag px-4 py-2 rounded-sm">Dynamic Programming</span>
+                    </div>
+                </div>
+
+                <!-- Programming Skills -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-[var(--primary-color)]">Implementation Skills</h2>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag px-4 py-2 rounded-sm">C Programming</span>
+                        <span class="skill-tag px-4 py-2 rounded-sm">C++</span>
+                        <span class="skill-tag px-4 py-2 rounded-sm">Java</span>
+                        <span class="skill-tag px-4 py-2 rounded-sm">OOPS</span>
+                        <span class="skill-tag px-4 py-2 rounded-sm">Problem Solving</span>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-[var(--primary-color)]">Languages</h2>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-[#192133] px-4 py-2 rounded-sm hover:bg-[#1c2539]">Hindi</span>
+                        <span class="bg-[#192133] px-4 py-2 rounded-sm hover:bg-[#1c2539]">Odia</span>
+                        <span class="bg-[#192133] px-4 py-2 rounded-sm hover:bg-[#1c2539]">English</span>
+                        <span class="bg-[#192133] px-4 py-2 rounded-sm hover:bg-[#1c2539]">German</span>
+                    </div>
+                </div>
+            </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                    <div class="hotstar-card p-6 rounded-sm">
+                        <h3 class="text-[#1f80e0] text-xl mb-2">Education</h3>
+                        <p class="text-lg">BTech CSE IT </p>
+                        <p class="text-[#ffffff99]">SRM Institute of Science and Technology</p>
+                    </div>
+                    <div class="hotstar-card p-6 rounded-sm">
+                        <h3 class="text-[#1f80e0] text-xl mb-2">Course</h3>
+                        <p class="text-lg">Data Structures and Algorithms</p>
+                        <p class="text-[#ffffff99]">2nd Year Core Subject</p>
+                    </div>
+                </div>
+    
+                <!-- Cast Section -->
+                <div class="mb-16">
+                    <h2 class="text-4xl font-bold mb-8 text-[#1f80e0]">Cast</h2>
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <div class="hotstar-card rounded-sm overflow-hidden">
+                            <img src="20241102_193105.jpg" alt="Jeevanjyoti Pradhan" class="w-full md:w-64 h-80 object-cover"/>
+                            <div class="p-4">
+                                <h3 class="text-xl font-bold">Jeevanjyoti Pradhan</h3>
+                                <p class="text-[#1f80e0]">Lead Actor</p>
+                            </div>
+                        </div>
+    
+                        <!-- Social Media Links Section -->
+                        <div class="flex-1 hotstar-card rounded-sm p-6">
+                            <h2 class="text-2xl font-bold mb-6">Connect with the Actor</h2>
+                            <div class="grid grid-cols-2 md:grid-cols-2 gap-6">
+                                <a href="https://github.com/jeebanjyoti1101" target="_blank" rel="noopener noreferrer" 
+                                   class="social-icon flex items-center space-x-3">
+                                    <i class="fab fa-github text-3xl"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/jeeban-jyoti-pradhan-1ab632289/" target="_blank" rel="noopener noreferrer"
+                                   class="social-icon flex items-center space-x-3">
+                                    <i class="fab fa-linkedin text-3xl"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://x.com/JeebanJ15310679" target="_blank" rel="noopener noreferrer"
+                                   class="social-icon flex items-center space-x-3">
+                                    <i class="fab fa-twitter text-3xl"></i>
+                                    <span>Twitter</span>
+                                </a>
+                              
+                            </div>
+    
+                           
+    
+        <!-- Footer Section -->
+        <footer class="bg-[#0b0c0f] text-center p-6">
+            <p class="text-[#ffffff99] text-sm">© 2024 Jeevanjyoti Pradhan. All rights reserved.</p>
+        </footer>
+    
+    </body>
+    </html>
